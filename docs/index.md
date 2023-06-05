@@ -1,4 +1,6 @@
-# Welcome to MkDocs
+# Taberna del Gran Miracles
+
+![Se fueron las imagenes :(](src/taberna_miracles.png)
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
