@@ -1,19 +1,20 @@
-# Taberna del Gran Miracles
 
-![Se fueron las imagenes :(](src/taberna_miracles.png)
+Una aventura crítica y emocionante entre el capitulo III y el IV, may gosh :dizzy_face:
+## Creación de Personajes
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+La creación es algo distinta a lo convencial, se irá construyendo a medida avanza el personaje.
+Al inicio lo unico que se debe hacer es elegir un dote y una clase, esa es toda la creación.
 
-## Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
 
-## Project layout
+## Tiers
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+
+* `Heroico` 
+* `Paragon` 
+* `Epico` 
+* `Supremo` 
+* `Divino` 
+* `Cósmico`
+* `Trascendente`
+* `Eterno` 
