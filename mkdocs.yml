@@ -1,8 +1,14 @@
 site_name: Colacho 3.5
 nav:
     - Home: index.md
+    - Reglas: rules.md
     - Lugares: places.md
-    - Clases: class.md
+    - Clases:
+        - class.md
+        - Guerrero: c_guerrero.md
+        - Bárbaro: c_barbaro.md
+        - Bardo: c_bardo.md
+        - Mago: c_mago.md
     - Dotes: feats.md
     - Objetos: objects.md
 theme:
