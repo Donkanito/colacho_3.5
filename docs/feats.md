@@ -123,6 +123,8 @@ Puedes imbuir municiones de armas de rango con tus conjuros, esto toma 1 min por
 Al lanzar una municion cargada, esta hace su daño normal y libera el conjuro al momento de hacer impacto con una criatura. 
 Si la municion falla su objetivo, el conjuro se pierde. En caso de que el ataque este destinado para un espacio físico, entonces la tirada de ataque sera a una baja dificultad, pero se debe hacer.
 
+compañero animal  y rituales
+
 ## Tag Divino 
 
 ## Tag Cósmico
