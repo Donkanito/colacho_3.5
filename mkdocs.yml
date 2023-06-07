@@ -6,9 +6,11 @@ nav:
     - Clases:
         - class.md
         - Guerrero: clases/c_guerrero.md
+        - Clerigo: clases/c_clerigo.md
         - Bárbaro: clases/c_barbaro.md
         - Bardo: clases/c_bardo.md
         - Mago: clases/c_mago.md
+        - Pícaro: clases/c_picaro.md
     - Dotes: feats.md
     - Objetos: objects.md
 theme:

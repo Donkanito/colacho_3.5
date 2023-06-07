@@ -1,6 +1,7 @@
 # `Guerrero` 
 Una versión fucionada del guerrero con el paladín
 ### Guerrero Nivel 1
+![Se fueron las imagenes :(](guerrero.jpeg){ align=right }
 ### Guerrero Nivel 2
 ### Guerrero Nivel 3
 * Ataque Extra  
