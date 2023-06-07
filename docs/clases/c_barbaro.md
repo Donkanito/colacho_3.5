@@ -1,4 +1,4 @@
-#`Bárbaro`
+# `Bárbaro`
 
 Como Barbaro ganas el Tag Primal y los siguientes beneficios segun nivel
 ### Bárbaro Nivel 1

@@ -1,4 +1,5 @@
 # `Bardo`
+
 Como Bardo no obtienes un Tag especifico. 
 
 ### Bardo Nivel 1
@@ -6,9 +7,9 @@ Como Bardo no obtienes un Tag especifico.
 
 * Virtuotag  
 Puedes escoger hasta 2 Tags los cuales se convertiran en los de tu clase, para efectos de requisitos
-(Primal, Marcial, Aura, Arcano, Divino y Cósmico).
+(Primal, Marcial, Aura, Arcano, Divino y Cósmico).  
 * Obtienes la capacidad de lanzar conjuros Arcanos de la lista de Bardo de hasta nivel 2.
-* Puedes lanzar 2 conjuros al dia de cada nivel.
+* Puedes lanzar 2 conjuros al dia de cada nivel.  
 
 ### Bardo Nivel 2
 * Obtienes la capacidad de lanzar conjuros Arcanos de la lista de Bardo de hasta nivel 4.

@@ -1,7 +1,8 @@
 # Mago
 Al ser mago ganas el tag Arcano
 ### Mago Nivel 1
-![Se fueron las imagenes :(](mago.jpeg){ align=right }
+![Se fueron las imagenes :(](mago.jpeg){ align=right }  
+
 * Obtienes la capacidad de lanzar conjuros Arcanos de la lista de Mago de hasta nivel 3  
 * Puedes lanzar 3 conjuros al dia de cada nivel
 
