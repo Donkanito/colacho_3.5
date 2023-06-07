@@ -1,6 +1,8 @@
 # Reglas
 Accion
-reaccion
+
+
+reaccion/ interrupt
 AO
 montar
 ## Habilidades
