@@ -2,7 +2,7 @@
 Como Bardo no obtienes un Tag especifico. 
 
 ### Bardo Nivel 1
-![Se fueron las imagenes :(](/src/bardo.png){ align=left }
+![Se fueron las imagenes :(](bardo.png){ align=left }
 
 * Virtuotag  
 Puedes escoger hasta 2 Tags los cuales se convertiran en los de tu clase, para efectos de requisitos

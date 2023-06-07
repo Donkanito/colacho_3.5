@@ -2,7 +2,7 @@
 
 Como Barbaro ganas el Tag Primal y los siguientes beneficios segun nivel
 ### Bárbaro Nivel 1
-![Se fueron las imagenes :(](/src/barbaro.jpg){ align=right } 
+![Se fueron las imagenes :(](barbaro.jpg){ align=right } 
 
 * Ganas un +2 a tu HP Base
 * Obtienes entrenamiento en una habilidad a elección entre: atletismo, naturaleza o supervivencia.
