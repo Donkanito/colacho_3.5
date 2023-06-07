@@ -1,0 +1,756 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../clases/c_picaro/">
+      
+      
+        <link rel="next" href="../objects/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
+    
+    
+      
+        <title>Dotes - Colacho 3.5</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.26e3688c.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="default" data-md-color-accent="purple">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dotes" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Colacho 3.5" class="md-header__button md-logo" aria-label="Colacho 3.5" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Colacho 3.5
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Dotes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="default" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../rules/" class="md-tabs__link">
+      Reglas
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../places/" class="md-tabs__link">
+      Lugares
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../class/" class="md-tabs__link">
+        Clases
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
+      Dotes
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../objects/" class="md-tabs__link">
+      Objetos
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Colacho 3.5" class="md-nav__button md-logo" aria-label="Colacho 3.5" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Colacho 3.5
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rules/" class="md-nav__link">
+        Reglas
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../places/" class="md-nav__link">
+        Lugares
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Clases
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Clases
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class/" class="md-nav__link">
+        Clases
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clases/c_guerrero/" class="md-nav__link">
+        Guerrero
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clases/c_clerigo/" class="md-nav__link">
+        Clerigo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clases/c_barbaro/" class="md-nav__link">
+        Bárbaro
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clases/c_bardo/" class="md-nav__link">
+        Bardo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clases/c_mago/" class="md-nav__link">
+        Mago
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clases/c_picaro/" class="md-nav__link">
+        Pícaro
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Dotes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Dotes
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#no-tag" class="md-nav__link">
+    No Tag
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tag-primal" class="md-nav__link">
+    Tag Primal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tag-marcial" class="md-nav__link">
+    Tag Marcial
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tag-aura" class="md-nav__link">
+    Tag Aura
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tag-arcano" class="md-nav__link">
+    Tag Arcano
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tag-divino" class="md-nav__link">
+    Tag Divino
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tag-cosmico" class="md-nav__link">
+    Tag Cósmico
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/" class="md-nav__link">
+        Objetos
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="dotes">Dotes</h1>
+<p>Cada dote Cuesta 15 puntos, recibes uno a elección en la Creación de personaje.
+Los Tags en los dotes funcionan como requisitos, debes poseer dichos Tags para poder comprarlos. En caso de que un dote tenga mas de un Tag, solo basta con que poseas uno de ellos.</p>
+<h2 id="no-tag">No Tag</h2>
+<p><code>Resistente</code><br />
+Cada nivel de HP te aumenta en 2 mas, es decir que cada nivel te dará un total de 7 puntos de golpe.</p>
+<p><code>Asesino</code><br />
+Se debe elegir entre daño a distancia o cuerpo a cuerpo (CC). El dado base del tipo de daño elegido aumenta a 1d8.  </p>
+<p><code>Mana Pool</code><br />
+La Cantidad de puntos cósmicos diarios a gastar aumenta en 7.</p>
+<p><code>Lucky</code><br />
+Tienes 3 rerolls diarios para ser usados en cualquier tirada.</p>
+<p><code>Lingüista</code>: </p>
+<p><code>Talentoso</code><br />
+Estas entrenado en 3 habilidades a elección, obteniendo un +3 a cada una de estas tiradas.</p>
+<p><code>Sharpshooter</code>  </p>
+<ul>
+<li>No tienes desventaja al usar el alcance largo con tus armas.  </li>
+<li>Tus ataques de rango con arma ignoran coverturas parciales.  </li>
+<li>Antes de hacer un ataque con un arma de rango, puedes escoger quitar -3 al ataque para agregar un dado de daño, esto lo puedes hacer hasta 3 veces en un ataque.</li>
+</ul>
+<p><code>Montura</code><br />
+Req: Habilidad de Montar.<br />
+Mientras estas en montura eres capaz de maniobrar mucho.</p>
+<ul>
+<li>Tus ataques Melee contra criaturas no montadas de igual o menor tamaño que tu montura los haces con ventaja.  </li>
+<li>Puedes cambiar el objetivo de un ataque hacia a ti a tu montura o viceversa, el ataque debe solo afectar a 1 critatura, ya sea tu montura o tu.</li>
+<li>Si tu montura debe realizar un TDS de reflejos para recibir mitad de daño, en su lugar recibe 0 de daño.</li>
+</ul>
+<p><code>Telkinético</code><br />
+Tienes Acceso al Cantrip Mano de Mago, con la diferencia de que puedes levantar hasta 20 kg a una distancia de 60 pies.</p>
+<p><code>Telepático</code><br />
+Posees habla mental a una distancia de 60 pies. </p>
+<p>``: </p>
+<p>``: </p>
+<p>``: </p>
+<h2 id="tag-primal">Tag Primal</h2>
+<p><code>Defensa Natural</code><br />
+Tu piel se endurece, mientras no estes usando armadura obtienes un +2 a la CA</p>
+<p><code>Desdoble</code><br />
+Si encuentras animal, puedes pasar unos minutos empatizando con el y creando un vinculo primal. Una vez este vinculo esta creado, puedes usar los sentidos del animal. Si el vinculo creado es fuerte, podrias dar ordenes simples (tirada de naturaleza).  </p>
+<p><code>Uno con la naturaleza</code><br />
+Usando tu acción puedes entrar en un arbol, hacerte uno con el. Con otra accion, puedes salir a un cuadro adyacente al arbol escogido o otro que se encuentre a 60 pies o menos. Para descubrirte es necesario una tirada de percepccion CD 10 o se puede tira sigilo al momento de unificarte con el arbol.  </p>
+<p><code>Ligero</code>
+Duplica tu velocidad.</p>
+<h2 id="tag-marcial">Tag Marcial</h2>
+<p><code>Asesino Arcano</code> [Marcial] 
+Eres muy habilidoso para matar entes con magia</p>
+<ul>
+<li>Cuando alguien conjura adyacente a ti, puedes usar tu reaccion para hacer un ataque melee contra él.</li>
+<li>Cuando dañas a alguien que se esta concentrando en un conjuro, la criatura tiene desventaja en la tirada de concentracion para mantener el conjuro.</li>
+<li>Tienes ventaja en las TDS contra conjuros hechos adyacentes a ti.</li>
+</ul>
+<p><code>Oportunista</code> [Marcial]<br />
+Tus ataques de oportunidad ahora son acciones gratuitas, aun asi, no puedes realizar ataques de oportunidad dentro de tu turno.</p>
+<h2 id="tag-aura">Tag Aura</h2>
+<p><code>Inspiring Leader</code> [Aura]<br />
+Produces un aura de inspiracion, una vez por encuentro, tu y tus aliados que se encuentren a 30 pies tuyo suben su HP base en 10. Si el termino del efecto de esta aura resulta en HP negativo para alguna criatura, esta cae (efecto berserker). El aura de este dote no es acumulable. </p>
+<h2 id="tag-arcano">Tag Arcano</h2>
+<p><code>Conjuro Cuidadoso</code> [Arcano] [Metamágico] 
+Una vez por encuentro, cuando uses conjuro que force a una criatura a hacer un TDS, puedes salvar a objetivos aliados a eleccion, haciendo que automaticamente tengan exito en la tirada. Aun asi, se harian mitad de daño si es el conjuro lo dice. Solo puedes usar un efecto metamágico por conjuro.</p>
+<p><code>Conjuro Distante</code> [Arcano] [Metamágico]
+Una vez por encuentro, cuando lances un conjuro con rango (no toque), el rango se dobla.
+Puedes elegir un conjuro de toque para que este tenga rango 5'. Solo puedes usar un efecto metamágico por conjuro.</p>
+<p><code>Maximizar Conjuro</code> [Arcano] [Metamágico] <br />
+Una vez por encuentro, cuando lances un conjuro que requiera lanzar dados, todos sus dados de efecto seran maximizados. Solo puedes usar un efecto metamágico por conjuro.</p>
+<p><code>Potenciar Conjuro</code> [Arcano] [Metamágico] <br />
+Una vez por encuentro, Puedes incrementar el daño de un conjuro en un 50%. Solo puedes usar un efecto metamágico por conjuro.</p>
+<p><code>Conjuro Penetrante</code> [Arcano] [Metamágico] <br />
+Una vez por encuentro, puedes aumentar la dificultad del TDS de un conjuro en 3. Solo puedes usar un efecto metamágico por conjuro.</p>
+<p><code>Extender Conjuro</code> [Arcano] [Metamágico]<br />
+Una vez por encuentro, puedes escoger un conjuro cuya duracion sea de 1 minuto o mas y esta sera doblada, hasta un maximo de 24 horas. Solo puedes usar un efecto metamágico por conjuro.</p>
+<p><code>Apresurar Conjuro</code> [Arcano] [Metamágico]<br />
+Una vez por encuentro, en tu turno, puedes lanzar un conjuro como accion gratuita. Solo puedes usar un efecto metamágico por conjuro.</p>
+<p><code>Conjuro Gemelo</code> [Arcano] [Metamágico]<br />
+Una vez por encuentro, puedes usar un conjuro que solo afecte a 1 criatura, y este ahora afectara a 2 criaturas dentro del alcance. Solo puedes usar un efecto metamágico por conjuro.</p>
+<p><code>Conjuro Sutil</code> [Arcano] [Metamágico]<br />
+Una vez por encuentro, puedes lanzar un conjuro de manera indetectable, requiere un check de percepccion CD 20 para detectarlo. Solo puedes usar un efecto metamágico por conjuro.</p>
+<p><code>Mejora Metamágica</code> [Arcano] [Metamágico] <br />
+ahora tus dotes metamágicos los puedes usar 3 veces por encuentro y puedes usar mas de uno en el mismo conjuro.</p>
+<p><code>Francotirador Arcano</code> [Arcano]  </p>
+<ul>
+<li>Cuando lances un conjuro que requiera tirada de ataque, el rango de ese conjuro se dobla.  </li>
+<li>Tus conjuros de rango ignoran covertura parcial.  </li>
+<li>Puedes aprender un Cantrip de rango, de cualquier clase. </li>
+</ul>
+<p><code>Identificador</code> [Arcano] [Cósmico] 
+Ganas entrenamiento con la habilidad Arcana. Ademas, eres minuciosos al inspeccionar objetos legendarios, eres capaz de identificarlos cuando nadie mas puede, puedes usar los conjuro Identificar y Detectar magia como si fueran cantrips.</p>
+<p><code>Arquero Arcano</code> [Arcano]
+Puedes imbuir municiones de armas de rango con tus conjuros, esto toma 1 min por municion y deber ser hecho fuera de combate. Imbuir cada municion tiene un costo de 5 puntos Cósmicos y estas pierden su carga despues de un descanso largo.
+Al lanzar una municion cargada, esta hace su daño normal y libera el conjuro al momento de hacer impacto con una criatura. 
+Si la municion falla su objetivo, el conjuro se pierde. En caso de que el ataque este destinado para un espacio físico, entonces la tirada de ataque sera a una baja dificultad, pero se debe hacer.</p>
+<p>compañero animal  y rituales</p>
+<h2 id="tag-divino">Tag Divino</h2>
+<h2 id="tag-cosmico">Tag Cósmico</h2>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.b4d07000.min.js"></script>
+      
+    
+  </body>
+</html>
