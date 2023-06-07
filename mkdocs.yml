@@ -5,14 +5,15 @@ nav:
     - Lugares: places.md
     - Clases:
         - class.md
-        - Guerrero: c_guerrero.md
-        - Bárbaro: c_barbaro.md
-        - Bardo: c_bardo.md
-        - Mago: c_mago.md
+        - Guerrero: clases/c_guerrero.md
+        - Bárbaro: clases/c_barbaro.md
+        - Bardo: clases/c_bardo.md
+        - Mago: clases/c_mago.md
     - Dotes: feats.md
     - Objetos: objects.md
 theme:
   name: material
+  language: en
   features:
     - navigation.tabs
     - navigation.sections
